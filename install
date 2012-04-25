@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#checkout the vim plugins and copy the .vimrc
+cp -rf vimrc ~/.vimrc
+if [ ! -d ~/.vim/bundle/vundle ]; then 
+	git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+fi
+
+vim +BundleInstall +qall
