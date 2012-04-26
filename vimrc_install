@@ -15,7 +15,7 @@
  "Bundle 'L9'
  "Bundle 'FuzzyFinder'
  Bundle 'vim-scripts/The-NERD-Commenter'
- Bundle 'vim-scripts/Color-Sampler-Pack'
+ "Bundle 'vim-scripts/Color-Sampler-Pack'
  Bundle 'Raimondi/delimitMate'
  Bundle 'Shougo/neocomplcache'
  Bundle 'scrooloose/nerdtree'
@@ -35,6 +35,7 @@
  Bundle 'AlphaLiu/a.vim'
  Bundle 'fholgado/minibufexpl.vim'
  Bundle 'vim-scripts/sudo.vim'
+ Bundle 'flazz/vim-colorschemes'
 
  filetype plugin indent on     " required!
 
