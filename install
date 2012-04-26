@@ -18,6 +18,10 @@ function install_plugins
 		mv $HOME/.vimrc $HOME/$VIMRC_BAK
 	fi
 
+	if [ ! -f $HOME/.ackrc ]; then
+		curl -L https://raw.github.com/SaitoWu/dotfiles/master/ackrc > ~/.ackrc
+	fi
+
 	cp -rf vimrc_install $HOME/.vimrc
 
 	if [ ! -d $HOME/.vim/bundle/vundle ]; then 
