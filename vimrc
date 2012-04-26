@@ -1,47 +1,3 @@
-" Following are vundle settings
-" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
- filetype off " required!
-
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
-
-" let Vundle manage Vundle
-" required! 
- Bundle 'gmarik/vundle'
-
-" My Bundles here:
-"
-" original repos on github
- Bundle 'L9'
- Bundle 'FuzzyFinder'
- Bundle 'vim-scripts/The-NERD-Commenter'
- Bundle 'vim-scripts/Color-Sampler-Pack'
- Bundle 'Raimondi/delimitMate'
- Bundle 'Shougo/neocomplcache'
- Bundle 'scrooloose/nerdtree'
- Bundle 'vim-scripts/ScrollColors'
- Bundle 'AlphaLiu/vim-snipmate'
- Bundle 'tpope/vim-surround'
- Bundle 'tpope/vim-fugitive'
- Bundle 'tpope/vim-markdown'
- Bundle 'tpope/vim-rails'
- Bundle 'taq/vim-rspec'
- Bundle 'vim-ruby/vim-ruby'
- Bundle 'janx/vim-rubytest'
- Bundle 'mattn/zencoding-vim'
- Bundle 'bbommarito/vim-slim'
-
- filetype plugin indent on     " required!
-
-"
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
 "
 " 不兼容VI键盘，使用vim键盘
   set nocompatible
@@ -229,11 +185,11 @@ endif
 	let g:miniBufExplMapCTabSwitchBufs = 1
 
 
-" 设置FuzzyFinder
-  map <leader>F :FufFile<CR>
-  map <leader>f :FufTaggedFile<CR>
-  map <leader>g :FufTag<CR>
-  map <leader>b :FufBuffer<CR>
+"" 设置FuzzyFinder
+  "map <leader>F :FufFile<CR>
+  "map <leader>f :FufTaggedFile<CR>
+  "map <leader>g :FufTag<CR>
+  "map <leader>b :FufBuffer<CR>
 
 " 设置Color-Sample
 	map <leader>1 :NEXTCOLOR<cr>
@@ -249,3 +205,9 @@ endif
 	if filereadable(expand("~/.vim/bundle/vim-snipmate/snippets/support_functions.vim"))
 		source ~/.vim/bundle/vim-snipmate/snippets/support_functions.vim
 	endif
+
+" Ctrlp
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
+set wildignore+=tmp\*,*.swp,*.zip,*.exe   " Windows
+
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'

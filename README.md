@@ -9,7 +9,6 @@
 0. cd alpha-vimrc && ./install
 
 #####Plugins:
-* [FuzzyFinder](https://github.com/vim-scripts/FuzzyFinder)
 * [The-NERD-Commenter](https://github.com/vim-scripts/The-NERD-Commenter)
 * a.vim
 * [color-sampler-pack](https://github.com/vim-scripts/Color-Sampler-Pack)
@@ -22,7 +21,6 @@
 * [surround](https://github.com/tpope/vim-surround)
 * [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
-* vim-l9
 * [vim-markdown](https://github.com/tpope/vim-markdown)
 * [vim-rails](https://github.com/tpope/vim-rails)
 * [vim-rspec](https://github.com/taq/vim-rspec)

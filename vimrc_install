@@ -12,8 +12,8 @@
 " My Bundles here:
 "
 " original repos on github
- Bundle 'L9'
- Bundle 'FuzzyFinder'
+ "Bundle 'L9'
+ "Bundle 'FuzzyFinder'
  Bundle 'vim-scripts/The-NERD-Commenter'
  Bundle 'vim-scripts/Color-Sampler-Pack'
  Bundle 'Raimondi/delimitMate'
@@ -30,6 +30,7 @@
  Bundle 'janx/vim-rubytest'
  Bundle 'mattn/zencoding-vim'
  Bundle 'bbommarito/vim-slim'
+ Bundle 'kien/ctrlp.vim'
 
  filetype plugin indent on     " required!
 

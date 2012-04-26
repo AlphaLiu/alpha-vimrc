@@ -42,7 +42,7 @@ function install_plugins
 
 	cp -rf bundle $HOME/.vim/
 
-	cp -rf vimrc $HOME/.vimrc
+	cat vimrc >> $HOME/.vimrc
 
 	echo "********** Installation Done! **********"
  
