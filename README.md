@@ -10,10 +10,10 @@
 
 #####Plugins:
 * [The-NERD-Commenter](https://github.com/vim-scripts/The-NERD-Commenter)
-* a.vim
+* [a.vim](https://github.com/AlphaLiu/a.vim)
 * [color-sampler-pack](https://github.com/vim-scripts/Color-Sampler-Pack)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
-* minibufexpl
+* [minibufexpl](https://github.com/fholgado/minibufexpl.vim)
 * [neocomplcache](https://github.com/Shougo/neocomplcache)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [scrollcolors](https://github.com/vim-scripts/ScrollColors)
@@ -28,6 +28,9 @@
 * [vim-rubytest](https://github.com/janx/vim-rubytest)
 * [zencoding-vim](https://github.com/mattn/zencoding-vim)
 * [vim-slim](https://github.com/bbommarito/vim-slim)
+* [ctrlp](https://github.com/kien/ctrlp.vim)
+* [ack.vim](https://github.com/mileszs/ack.vim)
+* [sudo.vim](https://github.com/vim-scripts/sudo.vim)
 
 #####Customed shortcut keys:
 TO BE CONTINUE...

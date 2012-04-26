@@ -34,6 +34,7 @@
  Bundle 'mileszs/ack.vim'
  Bundle 'AlphaLiu/a.vim'
  Bundle 'fholgado/minibufexpl.vim'
+ Bundle 'vim-scripts/sudo.vim'
 
  filetype plugin indent on     " required!
 
