@@ -32,6 +32,8 @@
  Bundle 'bbommarito/vim-slim'
  Bundle 'kien/ctrlp.vim'
  Bundle 'mileszs/ack.vim'
+ Bundle 'AlphaLiu/a.vim'
+ Bundle 'fholgado/minibufexpl.vim'
 
  filetype plugin indent on     " required!
 
