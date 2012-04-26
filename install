@@ -30,12 +30,10 @@ function install_plugins
 
 	vim +BundleInstall +qall
 
-	cp -rf bundle $HOME/.vim/
-
 	cat vimrc >> $HOME/.vimrc
 
 	echo "********** Installation Done! **********"
-	echo "* Notes: ack.vim required \"ack\" in your system, please read the documentations in http://betterthangrep.com/"
+	echo "* Notes: ack.vim requires \"ack\" in your system, please read the documentations in http://betterthangrep.com/"
  
 }
 
