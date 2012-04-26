@@ -1,26 +1,71 @@
 #!/bin/bash
 
 #checkout the vim plugins and copy the .vimrc
+
+VIMRC_BAK="vimrc_old"
+
 function update_plugins
 {
 	if [ ! -d $1 ]; then
-		echo "$1 does not exist, please check!"
+		echo "********** $1 does not exist, please check! **********"
 		exit	
 	fi
+
 	cd $1
+
 	for file in `ls`; do
 		if [ -d $file -a -d $file/.git ]; then
-			echo $file
+			echo "********** Updateing $file **********"
 			cd $file && git pull && cd ..
 		fi
 	done
+
 	cd ..
 }
-cp -rf vimrc ~/.vimrc
-if [ ! -d ~/.vim/bundle/vundle ]; then 
-	git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+function install_plugins
+{
+	echo "********** Installing vim plugins **********"
+
+	if [ -f $HOME/.vimrc ]; then
+		echo "********** Backup the exist .vimrc to $VIMRC_BAK  **********"		
+		mv $HOME/.vimrc $HOME/$VIMRC_BAK
+	fi
+
+	cp -rf vimrc_install $HOME/.vimrc
+
+	if [ ! -d $HOME/.vim/bundle/vundle ]; then 
+		git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
+	fi
+
+	vim +BundleInstall +qall
+
+	cp -rf bundle $HOME/.vim/
+
+	cp -rf vimrc $HOME/.vimrc
+
+	echo "********** Installation Done! **********"
+ 
+}
+
+function Usage
+{
+	echo "Usage: $0"
+	echo "$0 update"
+}
+if [ $# -eq 0 ]; then 
+	install_plugins
+	exit
 fi
 
-vim +BundleInstall +qall
+if [ $# -gt 1 ]; then
+	Usage
+	exit 
+fi
 
-#update_plugins "$HOME/.vim/bundle"
+if [ $1 = "update" ]; then
+	update_plugins "$HOME/.vim/bundle"
+else
+	Usage
+fi
+
