@@ -6,21 +6,7 @@ VIMRC_BAK="vimrc_old"
 
 function update_plugins
 {
-	if [ ! -d $1 ]; then
-		echo "********** $1 does not exist, please check! **********"
-		exit	
-	fi
-
-	cd $1
-
-	for file in `ls`; do
-		if [ -d $file -a -d $file/.git ]; then
-			echo "********** Updateing $file **********"
-			cd $file && git pull && cd ..
-		fi
-	done
-
-	cd ..
+	vim +BundleInstall! +qall
 }
 
 function install_plugins
