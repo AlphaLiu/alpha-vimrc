@@ -36,6 +36,7 @@
  Bundle 'fholgado/minibufexpl.vim'
  Bundle 'vim-scripts/sudo.vim'
  Bundle 'flazz/vim-colorschemes'
+ Bundle 'tpope/vim-unimpaired'
 
  filetype plugin indent on     " required!
 

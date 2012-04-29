@@ -211,3 +211,11 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
 set wildignore+=tmp\*,*.swp,*.zip,*.exe   " Windows
 
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+
+" unimpaired.vim
+" Buble single line
+	nmap <leader>u [e
+	nmap <leader>d ]e
+" Buble mulitle lines
+	vmap <leader>u [egv
+	vmap <leader>d ]egv
