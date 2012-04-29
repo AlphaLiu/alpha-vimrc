@@ -37,6 +37,7 @@
  Bundle 'vim-scripts/sudo.vim'
  Bundle 'flazz/vim-colorschemes'
  Bundle 'tpope/vim-unimpaired'
+ Bundle 'godlygeek/tabular'
 
  filetype plugin indent on     " required!
 
