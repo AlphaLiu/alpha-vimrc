@@ -214,8 +214,8 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 " unimpaired.vim
 " Buble single line
-	nmap <leader>u [e
-	nmap <leader>d ]e
+	nmap <S-Up> [e
+	nmap <S-Down> ]e
 " Buble mulitle lines
-	vmap <leader>u [egv
-	vmap <leader>d ]egv
+	vmap <S-Up> [egv
+	vmap <S-Down> ]egv
