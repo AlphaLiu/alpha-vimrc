@@ -32,6 +32,8 @@
 * [ack.vim](https://github.com/mileszs/ack.vim)
 * [sudo.vim](https://github.com/vim-scripts/sudo.vim)
 * [vim-colorschemes](https://github.com/flazz/vim-colorschemes)
+* [vim-unimpaired](https://github.com/tpope/vim-unimpaired)
+* [tabular](https://github.com/godlygeek/tabular)
 
 #####Customed shortcut keys:
 TO BE CONTINUE...
