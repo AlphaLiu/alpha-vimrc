@@ -39,17 +39,16 @@ function install_plugins
 
 function Usage
 {
-	echo "Usage: $0"
-	echo "$0 update"
+	echo "Usage 1: $0"
+	echo "Usage 2: $0 update"
 }
+
 if [ $# -eq 0 ]; then 
 	install_plugins
 	exit
-fi
-
-if [ $# -gt 1 ]; then
+elif [ $# -gt 1 ]; then
 	Usage
-	exit 
+	exit
 fi
 
 if [ $1 = "update" ]; then
@@ -57,4 +56,3 @@ if [ $1 = "update" ]; then
 else
 	Usage
 fi
-
