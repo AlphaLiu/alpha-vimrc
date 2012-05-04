@@ -184,13 +184,6 @@ endif
 	let g:miniBufExplMapWindowNavArrows = 1
 	let g:miniBufExplMapCTabSwitchBufs = 1
 
-
-"" 设置FuzzyFinder
-  "map <leader>F :FufFile<CR>
-  "map <leader>f :FufTaggedFile<CR>
-  "map <leader>g :FufTag<CR>
-  "map <leader>b :FufBuffer<CR>
-
 " 设置Color-Sample
 	map <leader>1 :NEXTCOLOR<cr>
 	map <leader>2 :PREVCOLOR<cr>
@@ -207,10 +200,10 @@ endif
 	endif
 
 " Ctrlp
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
-set wildignore+=tmp\*,*.swp,*.zip,*.exe   " Windows
+	set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
+	set wildignore+=tmp\*,*.swp,*.zip,*.exe   " Windows
 
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+	let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 " unimpaired.vim
 " Buble single line
@@ -242,3 +235,13 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 	nnoremap <F5> :GundoToggle<CR>
 	let g:gundo_width = 35
 	let g:gundo_preview_height = 10
+
+" ruby-conque
+	nmap <silent> <Leader>rcrr :call RunRubyCurrentFileConque()<CR>
+	nmap <silent> <Leader>rcss :call RunRspecCurrentFileConque()<CR>
+	nmap <silent> <Leader>rcll :call RunRspecCurrentLineConque()<CR>
+	nmap <silent> <Leader>rccc :call RunCucumberCurrentFileConque()<CR>
+	nmap <silent> <Leader>rccl :call RunCucumberCurrentLineConque()<CR>
+	nmap <silent> <Leader>rcRR :call RunRakeConque()<CR>
+	nmap <silent> <Leader>rcrl :call RunLastConqueCommand()<CR>
+

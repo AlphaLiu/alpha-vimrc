@@ -10,35 +10,31 @@
  Bundle 'gmarik/vundle'
 
 " My Bundles here:
-"
 " original repos on github
- "Bundle 'L9'
- "Bundle 'FuzzyFinder'
- Bundle 'vim-scripts/The-NERD-Commenter'
- "Bundle 'vim-scripts/Color-Sampler-Pack'
- Bundle 'Raimondi/delimitMate'
- Bundle 'Shougo/neocomplcache'
- Bundle 'scrooloose/nerdtree'
+ Bundle 'flazz/vim-colorschemes'
  Bundle 'vim-scripts/ScrollColors'
- Bundle 'AlphaLiu/vim-snipmate'
+ Bundle 'vim-scripts/The-NERD-Commenter'
+ Bundle 'Shougo/neocomplcache'
+ Bundle 'Raimondi/delimitMate'
  Bundle 'tpope/vim-surround'
+ Bundle 'AlphaLiu/vim-snipmate'
+ Bundle 'tpope/vim-unimpaired'
+ Bundle 'scrooloose/nerdtree'
  Bundle 'tpope/vim-fugitive'
- Bundle 'tpope/vim-markdown'
- Bundle 'tpope/vim-rails'
- Bundle 'taq/vim-rspec'
- Bundle 'vim-ruby/vim-ruby'
- Bundle 'janx/vim-rubytest'
- Bundle 'mattn/zencoding-vim'
- Bundle 'bbommarito/vim-slim'
- Bundle 'kien/ctrlp.vim'
- Bundle 'mileszs/ack.vim'
- Bundle 'AlphaLiu/a.vim'
  Bundle 'fholgado/minibufexpl.vim'
  Bundle 'vim-scripts/sudo.vim'
- Bundle 'flazz/vim-colorschemes'
- Bundle 'tpope/vim-unimpaired'
  Bundle 'godlygeek/tabular'
- Bundle 'sjl/gundo.vim'
+ Bundle 'kien/ctrlp.vim'
+ Bundle 'sjl/gundo.vim'                  " need python vim support
+ Bundle 'mileszs/ack.vim'                " need ack program support
+ Bundle 'AlphaLiu/a.vim'
+ Bundle	'rson/vim-conque'                " dependence of vim-ruby-conque
+ Bundle 'skwp/vim-ruby-conque'           " need python vim support
+ Bundle 'bbommarito/vim-slim'
+ Bundle 'tpope/vim-rails'
+ Bundle 'vim-ruby/vim-ruby'              " need ruby vim support
+ Bundle 'tpope/vim-markdown'
+ Bundle 'mattn/zencoding-vim'
 
  filetype plugin indent on     " required!
 
