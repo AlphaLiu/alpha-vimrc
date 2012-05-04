@@ -6,7 +6,7 @@
  call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
  Bundle 'gmarik/vundle'
 
 " My Bundles here:
@@ -25,14 +25,14 @@
  Bundle 'vim-scripts/sudo.vim'
  Bundle 'godlygeek/tabular'
  Bundle 'kien/ctrlp.vim'
- Bundle 'sjl/gundo.vim'                  " need python vim support
- Bundle 'mileszs/ack.vim'                " need ack program support
+ Bundle 'sjl/gundo.vim'
+ Bundle 'mileszs/ack.vim'
  Bundle 'AlphaLiu/a.vim'
- Bundle	'rson/vim-conque'                " dependence of vim-ruby-conque
- Bundle 'skwp/vim-ruby-conque'           " need python vim support
+ Bundle	'rson/vim-conque'
+ Bundle 'skwp/vim-ruby-conque'
  Bundle 'bbommarito/vim-slim'
  Bundle 'tpope/vim-rails'
- Bundle 'vim-ruby/vim-ruby'              " need ruby vim support
+ Bundle 'vim-ruby/vim-ruby'
  Bundle 'tpope/vim-markdown'
  Bundle 'mattn/zencoding-vim'
 
