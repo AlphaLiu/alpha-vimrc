@@ -38,6 +38,7 @@
  Bundle 'flazz/vim-colorschemes'
  Bundle 'tpope/vim-unimpaired'
  Bundle 'godlygeek/tabular'
+ Bundle 'sjl/gundo.vim'
 
  filetype plugin indent on     " required!
 

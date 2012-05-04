@@ -34,6 +34,7 @@
 * [vim-colorschemes](https://github.com/flazz/vim-colorschemes)
 * [vim-unimpaired](https://github.com/tpope/vim-unimpaired)
 * [tabular](https://github.com/godlygeek/tabular)
+* [gundo](https://github.com/sjl/gundo.vim)
 
 #####Customed shortcut keys:
 TO BE CONTINUE...

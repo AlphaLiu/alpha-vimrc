@@ -237,3 +237,8 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 			call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
 		endif
 	endfunction
+
+" Gundo
+	nnoremap <F5> :GundoToggle<CR>
+	let g:gundo_width = 35
+	let g:gundo_preview_height = 10
