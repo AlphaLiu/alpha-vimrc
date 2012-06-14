@@ -10,7 +10,7 @@
 0. "./install" or "rake deploy" 
 
 #####Plugins:
-* [The-NERD-Commenter](https://github.com/vim-scripts/The-NERD-Commenter)
+* [The-NERD-Commenter](https://github.com/scrooloose/nerdcommenter)
 * [a.vim](https://github.com/AlphaLiu/a.vim)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
 * [minibufexpl](https://github.com/fholgado/minibufexpl.vim)

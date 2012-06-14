@@ -13,7 +13,7 @@
 " original repos on github
  Bundle 'flazz/vim-colorschemes'
  Bundle 'vim-scripts/ScrollColors'
- Bundle 'vim-scripts/The-NERD-Commenter'
+ Bundle 'scrooloose/nerdcommenter.git'
  Bundle 'Shougo/neocomplcache'
  Bundle 'Raimondi/delimitMate'
  Bundle 'tpope/vim-surround'
