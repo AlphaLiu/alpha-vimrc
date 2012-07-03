@@ -36,6 +36,7 @@
  Bundle 'tpope/vim-markdown'
  Bundle 'mattn/zencoding-vim'
  Bundle 'tpope/vim-repeat'
+ Bundle 'tpope/vim-endwise'
 
  filetype plugin indent on     " required!
 
