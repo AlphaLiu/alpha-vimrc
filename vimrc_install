@@ -25,6 +25,7 @@
  Bundle 'tpope/vim-fugitive'
  Bundle 'tpope/vim-markdown'
  Bundle 'tpope/vim-repeat'
+ Bundle 'nathanaelkane/vim-indent-guides'
  Bundle 'Raimondi/delimitMate'
  Bundle 'godlygeek/tabular'
  Bundle 'mileszs/ack.vim'
