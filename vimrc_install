@@ -1,46 +1,119 @@
 " Following are vundle settings
 " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
- filetype off                   " required!
+filetype off                   " required!
 
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
- Bundle 'gmarik/vundle'
+Bundle 'gmarik/vundle'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+if executable('ack')
+	Bundle 'mileszs/ack.vim'
+endif
 
-" My Bundles here:
-" original repos on github
- Bundle 'flazz/vim-colorschemes'
- Bundle 'fholgado/minibufexpl.vim'
- Bundle 'vim-scripts/ScrollColors'
- Bundle 'vim-scripts/sudo.vim'
- Bundle 'scrooloose/nerdcommenter.git'
- Bundle 'scrooloose/nerdtree'
- Bundle 'Shougo/neocomplcache'
- Bundle 'AlphaLiu/vim-snipmate'
- Bundle 'AlphaLiu/a.vim'
- Bundle 'tpope/vim-unimpaired'
- Bundle 'tpope/vim-surround'
- Bundle 'tpope/vim-fugitive'
- Bundle 'tpope/vim-markdown'
- Bundle 'tpope/vim-repeat'
- Bundle 'nathanaelkane/vim-indent-guides'
- Bundle 'Raimondi/delimitMate'
- Bundle 'godlygeek/tabular'
- Bundle 'mileszs/ack.vim'
- Bundle 'kien/ctrlp.vim'
- Bundle 'sjl/gundo.vim'
- Bundle	'rson/vim-conque'
- Bundle 'mattn/zencoding-vim'
- "following bundles are for ruby & rails development
- Bundle 'bbommarito/vim-slim'
- Bundle 'vim-ruby/vim-ruby'
- Bundle 'skwp/vim-ruby-conque'
- Bundle 'tpope/vim-rails'
- Bundle 'tpope/vim-endwise'
+if !exists('g:bundle_groups')
+	let g:bundle_groups=['general', 'programming', 'ruby', 'javascript', 'html', 'misc']
+endif
 
- filetype plugin indent on     " required!
+" To override all the included bundles, put
+if !exists("g:override_bundles")
+	" General
+	if count(g:bundle_groups, 'general')
+		Bundle 'scrooloose/nerdtree'
+		Bundle 'altercation/vim-colors-solarized'
+		Bundle 'spf13/vim-colors'
+		Bundle 'tpope/vim-surround'
+		Bundle 'fholgado/minibufexpl.vim'
+		Bundle 'kien/ctrlp.vim'
+		Bundle 'vim-scripts/sessionman.vim'
+		Bundle 'matchit.zip'
+		Bundle 'Lokaltog/vim-powerline'
+		Bundle 'Lokaltog/vim-easymotion'
+		Bundle 'godlygeek/csapprox'
+		Bundle 'jistr/vim-nerdtree-tabs'
+		Bundle 'flazz/vim-colorschemes'
+		Bundle 'vim-scripts/ScrollColors'
+		Bundle 'tpope/vim-repeat'
+		Bundle 'sjl/gundo.vim'
+		Bundle 'tpope/vim-unimpaired'
+	endif
+
+	" General Programming
+	if count(g:bundle_groups, 'programming')
+		" Pick one of the checksyntax, jslint, or syntastic
+		Bundle 'scrooloose/syntastic'
+		Bundle 'garbas/vim-snipmate'
+		Bundle 'spf13/snipmate-snippets'
+		" Source support_function.vim to support snipmate-snippets.
+		if filereadable(expand("~/.vim/bundle/snipmate-snippets/snippets/support_functions.vim"))
+			source ~/.vim/bundle/snipmate-snippets/snippets/support_functions.vim
+		endif
+
+		Bundle 'tpope/vim-fugitive'
+		Bundle 'scrooloose/nerdcommenter'
+		Bundle 'godlygeek/tabular'
+		if executable('ctags')
+			Bundle 'majutsushi/tagbar'
+		endif
+		Bundle 'Shougo/neocomplcache'
+		Bundle 'AlphaLiu/a.vim'
+		Bundle 'Raimondi/delimitMate'
+		Bundle 'nathanaelkane/vim-indent-guides'
+	endif
+
+	"" PHP
+	"if count(g:spf13_bundle_groups, 'php')
+	"Bundle 'spf13/PIV'
+	"endif
+
+	"" Python
+	"if count(g:spf13_bundle_groups, 'python')
+	"" Pick either python-mode or pyflakes & pydoc
+	"Bundle 'klen/python-mode'
+	"Bundle 'python.vim'
+	"Bundle 'python_match.vim'
+	"Bundle 'pythoncomplete'
+	"endif
+
+	" Javascript
+	if count(g:bundle_groups, 'javascript')
+		Bundle 'leshill/vim-json'
+		Bundle 'groenewege/vim-less'
+		Bundle 'taxilian/vim-web-indent'
+	endif
+
+	" HTML
+	if count(g:bundle_groups, 'html')
+		Bundle 'HTML-AutoCloseTag'
+		Bundle 'ChrisYip/Better-CSS-Syntax-for-Vim'
+		Bundle 'mattn/zencoding-vim'
+	endif
+
+	" Ruby
+	if count(g:bundle_groups, 'ruby')
+		Bundle 'tpope/vim-rails'
+		Bundle 'bbommarito/vim-slim'
+		Bundle 'vim-ruby/vim-ruby'
+		Bundle 'rson/vim-conque'
+		Bundle 'skwp/vim-ruby-conque'
+		Bundle 'tpope/vim-endwise'
+	endif
+
+	" Misc
+	if count(g:bundle_groups, 'misc')
+		Bundle 'spf13/vim-markdown'
+		Bundle 'spf13/vim-preview'
+		Bundle 'Puppet-Syntax-Highlighting'
+	endif
+endif
+"Bundle 'vim-scripts/sudo.vim'
+"Bundle 'AlphaLiu/vim-snipmate'
+"Bundle 'tpope/vim-markdown'
+
+filetype plugin indent on     " required!
 
 "
 " Brief help
