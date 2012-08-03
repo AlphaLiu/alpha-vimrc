@@ -62,14 +62,6 @@
                                     "selected characters/lines in visual mode
     endif
 
-		"Set 7 lines to the curors - when moving vertical..
-		set so=7
-		"The commandbar is 1 high
-		set cmdheight=1
-		"设置在最上面一行显示当前文件名
-		"if exists("&showtabline")
-		"set stal=2
-		"endif
 
     if has('statusline')
         set laststatus=2
@@ -102,6 +94,15 @@
     set foldenable                  "auto fold code
     "set list
     "set listchars=tab:,.,trail:.,extends:#,nbsp:. "Highlight problematic whitespace
+		
+		"Set 7 lines to the curors - when moving vertical..
+		set so=7
+		"The commandbar is 1 high
+		set cmdheight=1
+		"设置在最上面一行显示当前文件名
+		"if exists("&showtabline")
+		"set stal=2
+		"endif
 
 
 "}
