@@ -26,19 +26,20 @@ if !exists("g:override_bundles")
 		Bundle 'altercation/vim-colors-solarized'
 		Bundle 'spf13/vim-colors'
 		Bundle 'tpope/vim-surround'
-		Bundle 'fholgado/minibufexpl.vim'
+		"Bundle 'fholgado/minibufexpl.vim'
 		Bundle 'kien/ctrlp.vim'
 		Bundle 'vim-scripts/sessionman.vim'
 		Bundle 'matchit.zip'
 		Bundle 'Lokaltog/vim-powerline'
 		Bundle 'Lokaltog/vim-easymotion'
 		Bundle 'godlygeek/csapprox'
-		Bundle 'jistr/vim-nerdtree-tabs'
+		"Bundle 'jistr/vim-nerdtree-tabs'
 		Bundle 'flazz/vim-colorschemes'
 		Bundle 'vim-scripts/ScrollColors'
 		Bundle 'tpope/vim-repeat'
 		Bundle 'sjl/gundo.vim'
 		Bundle 'tpope/vim-unimpaired'
+		Bundle 'corntrace/bufexplorer'
 	endif
 
 	" General Programming
