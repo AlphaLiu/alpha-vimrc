@@ -346,9 +346,9 @@
      " }
 
      " Session List {
-        set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
-        nmap <leader>sl :SessionList<CR>
-        nmap <leader>ss :SessionSave<CR>
+        "set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
+        "nmap <leader>sl :SessionList<CR>
+        "nmap <leader>ss :SessionSave<CR>
      " }
 
      " Buffer explorer {
@@ -356,7 +356,7 @@
      " }
 
      " JSON {
-        nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
+        "nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
      " }
 
      "" PyMode {
