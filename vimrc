@@ -408,10 +408,10 @@
 
         " <CR>: close popup
         " <s-CR>: close popup and save indent.
-        inoremap <expr><CR>  pumvisible() ? neocomplcache#close_popup() : "\<CR>"
-        inoremap <expr><s-CR> pumvisible() ? neocomplcache#close_popup() "\<CR>" : "\<CR>"
+        "inoremap <expr><CR>  pumvisible() ? neocomplcache#close_popup() : "\<CR>"
+        "inoremap <expr><s-CR> pumvisible() ? neocomplcache#close_popup() "\<CR>" : "\<CR>"
         " <TAB>: completion.
-        inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+        "inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
         " <C-h>, <BS>: close popup and delete backword char.
         inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
