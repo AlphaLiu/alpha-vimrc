@@ -67,9 +67,9 @@
         set laststatus=2
         "Broken down into easily includeable segments
         set statusline=%<%f\    "Filename
-        set statusline+=%w%h%m%r "Options
+        "set statusline+=%w%h%m%r "Options
         set statusline+=%{fugitive#statusline()} " Git Hotness
-        set statusline+=\ [%{&ff}/%Y]            "filetype
+        "set statusline+=\ [%{&ff}/%Y]            "filetype
         set statusline+=\ [%{getcwd()}]          "current dir
         set statusline+=%=%-14.(%l,%c%V%)\ %p%%  "Right aligned file nav info
     endif
@@ -185,13 +185,6 @@
     map <S-H> gT
     map <S-L> gt
 
-    "Stupid shift key fixes
-    cmap W w
-    cmap WQ wq
-    cmap wQ wq
-    cmap Q q
-    cmap Tabe tabe
-
     "Yank from the cursor to the end of the line, to be consistent with C and D.
     nnoremap Y y$
 
@@ -265,17 +258,17 @@
                 \endif
         endif
 
-        hi Pmenu  guifg=#000000 guibg=#F8F8F8 ctermfg=black ctermbg=Lightgray
-        hi PmenuSbar  guifg=#8A95A7 guibg=#F8F8F8 gui=NONE ctermfg=darkcyan ctermbg=lightgray cterm=NONE
-        hi PmenuThumb  guifg=#F8F8F8 guibg=#8A95A7 gui=NONE ctermfg=lightgray ctermbg=darkcyan cterm=NONE
+        "hi Pmenu  guifg=#000000 guibg=#F8F8F8 ctermfg=black ctermbg=Lightgray
+        "hi PmenuSbar  guifg=#8A95A7 guibg=#F8F8F8 gui=NONE ctermfg=darkcyan ctermbg=lightgray cterm=NONE
+        "hi PmenuThumb  guifg=#F8F8F8 guibg=#8A95A7 gui=NONE ctermfg=lightgray ctermbg=darkcyan cterm=NONE
 
         " some convenient mappings
-        inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
-        inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
-        inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
-        inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
-        inoremap <expr> <C-d>      pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<C-d>"
-        inoremap <expr> <C-u>      pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<C-u>"
+        "inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
+        "inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
+        "inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
+        "inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
+        "inoremap <expr> <C-d>      pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<C-d>"
+        "inoremap <expr> <C-u>      pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<C-u>"
 
         " automatically open and close the popup menu / preview window
         au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
@@ -346,13 +339,13 @@
      " }
 
      " Session List {
-        set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
-        nmap <leader>sl :SessionList<CR>
-        nmap <leader>ss :SessionSave<CR>
+        "set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
+        "nmap <leader>sl :SessionList<CR>
+        "nmap <leader>ss :SessionSave<CR>
      " }
 
      " Buffer explorer {
-        nmap <tab> :BufExplorer<CR>
+        "nmap <tab> :BufExplorer<CR>
      " }
 
      " JSON {
@@ -489,12 +482,12 @@
 				autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 			" }
 			"MinibufferExpl {
-					"let g:miniBufExplModSelTarget = 1
-					"let g:miniBufExplModSelTarget = 0
-					"let g:miniBufExplUseSingleClick = 1
-					"let g:miniBufExplMapWindowNavVim = 1
-					"let g:miniBufExplMapWindowNavArrows = 1
-					"let g:miniBufExplMapCTabSwitchBufs = 1
+					let g:miniBufExplModSelTarget = 1
+					let g:miniBufExplModSelTarget = 0
+					let g:miniBufExplUseSingleClick = 1
+					let g:miniBufExplMapWindowNavVim = 1
+					let g:miniBufExplMapWindowNavArrows = 1
+					let g:miniBufExplMapCTabSwitchBufs = 1
 			"	}
 
 " }
