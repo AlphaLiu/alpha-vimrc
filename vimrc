@@ -430,7 +430,7 @@
         if !exists('g:neocomplcache_omni_patterns')
             let g:neocomplcache_omni_patterns = {}
         endif
-        let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\h\w*\|\h\w*::'
+        "let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\h\w*\|\h\w*::'
         "autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
         let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
         let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
@@ -515,15 +515,15 @@
 " }
 "
  " Functions {
-	autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-	if has("autocmd") && exists("+omnifunc")
-		  autocmd Filetype *
-			        \ if &omnifunc == ""|
-			        \   setlocal omnifunc=syntaxcomplete#Complete |
-			        \ endif
-		endif
-		let g:rubycomplete_buffer_loading = 1
-		let g:rubycomplete_classes_in_global = 1
+	"autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+	"if has("autocmd") && exists("+omnifunc")
+			"autocmd Filetype *
+							"\ if &omnifunc == ""|
+							"\   setlocal omnifunc=syntaxcomplete#Complete |
+							"\ endif
+		"endif
+		"let g:rubycomplete_buffer_loading = 1
+		"let g:rubycomplete_classes_in_global = 1
 		"let g:rubycomplete_rails = 1
 		"
 		"Following to have Vim jump to the last position when reopening a file
