@@ -157,6 +157,9 @@
 		"设置自动保存
 		imap <F9> <Esc>:up<cr>
 
+		"auto skip one char in insert mode, it's useful in autoclose plugin
+		imap <F8> <Esc>la
+
 		"Tab configuration
 		map <leader>tn :tabnew .<cr>
 		map <leader>tc :tabclose<cr>
@@ -164,9 +167,9 @@
 		map <leader>tp :tabp<cr>
 
 		"Moving fast to front, back and 2 sides ;)
-		imap <m-$> <esc>$a
+		imap <m-4> <esc>$a
 		imap <m-0> <esc>0i
-		imap <D-$> <esc>$a
+		imap <D-4> <esc>$a
 		imap <D-0> <esc>0i
 
 		"Fast close the buffer
